@@ -6,3 +6,4 @@
 
 5. Criar pasta styles > theme.js (Onde vai ficar o style GERAL) e colocar o token de cor, no main.jsx > Importar o ThemeProvider e adicionar a tag com theme={theme} envolvendo o <Details>
 
+6. Aula 16
