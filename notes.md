@@ -4,6 +4,13 @@
 
 4. (Aula 14) npm install --save styled-components e dentro da pasta Details > style.js temos que importar styled do styled-components & Criar o index.jsx > Importar o container
 
-5. Criar pasta styles > theme.js (Onde vai ficar o style GERAL) e colocar o token de cor, no main.jsx > Importar o ThemeProvider e adicionar a tag com theme={theme} envolvendo o <Details>
+5. (15) Criar pasta styles > theme.js (Onde vai ficar o style GERAL) e colocar o token de cor, no main.jsx > Importar o ThemeProvider e adicionar a tag com theme={theme} envolvendo o <Details>
 
-6. Aula 16
+6. (16) Criar o global.js > Estilização (global) de todas as páginas
+- Importar o createGlobalStyle de styled components e exportar default >
+- Resetar estilização global (*)
+- Mudar fundo do body > ${({ theme }) => theme.COLORS.BACKGROUND_800} e mudar a letra pra branco
+- Tirar decoração de texto dos links
+- Botão & a: mudar cursor para pointer e botar transição de 0.2s. E no :hover botar brilho de 0.9
+- Importar estilização global no main.js e colocar dentro do ThemeProvider para ter acesso aos temas, etc
+

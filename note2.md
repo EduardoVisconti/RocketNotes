@@ -22,7 +22,7 @@
 
 - Elementos aninhados (html > body > div > h1) impacta na performance, ficam mais lentos, CSS não consegue evitar
 
-- CSS-in-JS: aproveitam métodos atuais de componentização em JS para criar componentes performáticos a prova de colisão, extremamente automatiz ado
+- CSS-in-JS: aproveitam métodos atuais de componentização em JS para criar componentes performáticos a prova de colisão, extremamente automatizado
 
 - Styled Components (Escrever CSS dentro de JS): melhorar a maneira que lidamos com CSS nos componentes de aplicações JS/React
 
@@ -38,4 +38,11 @@ Manutenção sem dor: Tudo que você precisa vai estar no próprio contexto do c
 
 Boas práticas: Você escreve seu CSS no melhor padrão do mercado e pronto, os componentes cuidam para fornecer suporte para browsers antigos.
 
-- (Aula 14) O que foi feito: Mudamos o arquivo css para js > Importamos o styled do styled-components > Já exportando a variável 'Container' como styled.div >> No index, importamos o Container de styles.js > Invés de div agora usamos <Container>
+# Aula 14 - Container
+
+- O que foi feito: Mudamos o arquivo css para js > Importamos o styled do styled-components > Já exportando a variável 'Container' como styled.div >> No index, importamos o Container de styles.js > Invés de div agora usamos <Container>
+
+# Aula 16 - Arrow Function - Jeito curto de escrever funções
+- Não tem nome
+- Úteis para funções pequenas e simples
+- Executado automaticamente
