@@ -15,7 +15,6 @@
 - Para não ficar muito repetitivo o arq Details dentro da pasta Details, podemos mudar o arq para index e automaticamente já busca
 
 # Aula 13
-
 - Usamos o pré processador para criar estilização e o pré processador vai gerar o CSS final que é o que vamos utilizar para colocar o site em produção
 
 - Por que? Facilita a manutenção do nosso código, ajuda escrever mais limpa, reutilizar melhor os nossos códigos css (separar em arq, importações), possibilita a minificação de arquivos
@@ -39,10 +38,12 @@ Manutenção sem dor: Tudo que você precisa vai estar no próprio contexto do c
 Boas práticas: Você escreve seu CSS no melhor padrão do mercado e pronto, os componentes cuidam para fornecer suporte para browsers antigos.
 
 # Aula 14 - Container
-
 - O que foi feito: Mudamos o arquivo css para js > Importamos o styled do styled-components > Já exportando a variável 'Container' como styled.div >> No index, importamos o Container de styles.js > Invés de div agora usamos <Container>
 
-# Aula 16 - Arrow Function - Jeito curto de escrever funções
-- Não tem nome
+# Aula 17 - Arrow Function - Jeito curto de escrever funções
+- Função anônima = não tem nome
 - Úteis para funções pequenas e simples
 - Executado automaticamente
+
+# Aula 18 - Estilização CSS
+- Deixar as fontes mais suaves -webkit-font-smoothing: antialiased
