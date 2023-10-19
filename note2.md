@@ -47,3 +47,6 @@ Boas práticas: Você escreve seu CSS no melhor padrão do mercado e pronto, os 
 
 # Aula 18 - Estilização CSS
 - Deixar as fontes mais suaves -webkit-font-smoothing: antialiased
+
+# Aula 19 - Componentes
+- No React podemos fazer a utilização da componentização, que nos ajuda em produtividades, facilita a manutenção e reaproveitar códigos. Cada componente é uma peça de lego que podemos aproveitar e encaixar em vários lugares. Otimiza tempo e tempo pois no nosso design temos o mesmo design para vários botões por exemplo, nesse caso usamos um botão para fazer a componentização e reaproveitar em diversas telas
