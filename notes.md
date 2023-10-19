@@ -7,14 +7,15 @@
 5. (15) Criar pasta styles > theme.js (Onde vai ficar o style GERAL) e colocar o token de cor
 - No main.jsx > Importar o ThemeProvider e adicionar a tag com theme={theme} envolvendo o <Details>
 
-6. (16) Criar o global.js > Estilização (global) de todas as páginas
-- Importar o createGlobalStyle de styled components e exportar default >
+6. (16) Dentro de styles criar o global.js > Estilização (global) de todas as páginas
+- Importar o createGlobalStyle de styled components e exportar default createGlobalStyle `` >
 - Resetar estilização global (*)
 - Mudar fundo do body > ${({ theme }) => theme.COLORS.BACKGROUND_800} e mudar a letra pra branco
 - Tirar decoração de texto dos links
-- Botão & a: mudar cursor para pointer e botar transição de 0.2s. E no :hover botar brilho de 0.9
-- Importar estilização global no main.js e colocar dentro do ThemeProvider para ter acesso aos temas, etc
+- Botão & a: mudar cursor para pointer e botar transição filter de 0.2s. E no :hover botar filter de brilho de 0.9
+- Importar estilização global no main.jsx e colocar dentro do ThemeProvider acima de details para ter acesso aos temas, etc
 
+VVV
 7. (18) Adicionar fontes e editar body, input, button e textarea
 - Adicionar fonte no HTML
 - CSS: Adicionar fonte no body, input, button e textarea
