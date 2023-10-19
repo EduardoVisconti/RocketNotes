@@ -20,3 +20,13 @@
 - CSS: Adicionar fonte no body, input, button e textarea
 - Robot Slab, serif, 16px, sem outline
 - Deixar as fontes mais suaves = No body: -webkit-font-smoothing: antialiased
+
+8. (19) Criar em src > componentes > button > index.jsx e styles.cs
+* Dentro de styles.js > Importar styled de styled-components e exportar const Container com o nome style.button
+- Ocupar 100% da largura e 56px de altura
+- Tirar a borda e curva arredondada 10px
+- Padding com espaçamento lateral de 16px
+- Margin top de 16px
+- Peso da fonte de 500 (Tamanho mediano)
+- Pra quando botão tiver desativado: &:disabled: { opacidade: 0.5 }
+* Dentro de index.jsx > Importar Container da pasta styles > exportar a função Button() > Com a função return criar um container do tipo botão
