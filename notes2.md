@@ -53,3 +53,14 @@ Boas práticas: Você escreve seu CSS no melhor padrão do mercado e pronto, os 
 
 # Aula 19 - Componentes
 - No React podemos fazer a utilização da componentização, que nos ajuda em produtividades, facilita a manutenção e reaproveitar códigos. Cada componente é uma peça de lego que podemos aproveitar e encaixar em vários lugares. Otimiza tempo e tempo pois no nosso design temos o mesmo design para vários botões por exemplo, nesse caso usamos um botão para fazer a componentização e reaproveitar em diversas telas
+
+# Aula 20 - Propriedade (Ex: <Button *title*='...'; Title é uma prop.)
+- Reaproveitar componentes mas deixando as propriedades delas flexíveis
+- Quando for usar texto: "" & número: {}
+- \/ Na hora de exportarmos a função Button(props) < recebe props para acessarmos a propriedade e quando quiser exibir o conteúdo de uma propriedade colocamos em chaves {props.title} V
+- /\ {Desestruturar} Na hora de exportamos a função Button({title}) < recebe a propriedade de forma separada e quando quiser exibir o conteúdo da propriedade colocamos em chaves apenas {title}
+- Propriedades Boolean não precisa passar true/false, apenas ela
+- Quando estivermos passando a propriedade loading para uma função, colocamos como =false para caso não tenha sido informado será falso
+- Rest Operator (...rest): Qualquer outra propriedade que não deixe explícito mas tenha sido informada no HTML, nos inserimos ele no componente
+- disabled(prop. que desabilita o botão)={loading}: se o loading for verdadeira vai desabilitar e se for falso vai continuar habilitado
+- If ternário: { loading ? 'Carregando...' : title }; Se for true mostra 'Carregando' se não o title

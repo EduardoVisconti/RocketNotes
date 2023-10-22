@@ -32,3 +32,8 @@
 - Pra quando botão tiver desativado: &:disabled: { opacidade: 0.5 }
 * No index.jsx > Importar Container da pasta styles > exportar a função Button() > Com a função return () criar um <Container do tipo botão>Clique aqui<>
 * No Details > index.jsx = Importar componente { Button } da pasta components/Button e dentro do Container chamar o componente <Button /> para então criamos na página
+
+9. (20) No Details > index.jsx adicionar propriedades title nos Button, como 'login', 'cadastrar', 'voltar' e dentro de alguma delas adicionar a propriedade loading
+* Dentro do Button > index.jsx > Adicionar as propriedades no botão na exportação da função Button({ title, loading = false, ...rest }) = explicações no 'note2'
+- Add propriedades no <Container disabled={loading} & {...rest}
+- Dentro do <Container> adicionar a propriedade {loading ? 'Loading...' : title}
