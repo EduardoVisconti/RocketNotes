@@ -40,6 +40,9 @@ Boas práticas: Você escreve seu CSS no melhor padrão do mercado e pronto, os 
 # Aula 14 - Container
 - O que foi feito: Mudamos o arquivo css para js > Importamos o styled do styled-components > Já exportando a variável 'Container' como styled.div >> No index, importamos o Container de styles.js > Invés de div agora usamos <Container>
 
+# Aula 16 - Styles
+- Quando você exporta algo como uma exportação padrão (export default), você deve importá-lo sem chaves
+
 # Aula 17 - Arrow Function - Jeito curto de escrever funções
 - Função anônima = não tem nome
 - Úteis para funções pequenas e simples
