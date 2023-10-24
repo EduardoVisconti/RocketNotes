@@ -37,3 +37,5 @@
 * Dentro do Button > index.jsx > Adicionar as propriedades no botão na exportação da função Button({ title, loading = false, ...rest }) = explicações no 'note2'
 - Add propriedades no <Container disabled={loading} & {...rest}
 - Dentro do <Container> adicionar a propriedade {loading ? 'Loading...' : title}
+
+10. (01) 
