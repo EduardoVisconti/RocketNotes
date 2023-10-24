@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  body {
-    -webkit-font-smoothing: antialiased;
-  }
+  display: grid;
+  grid-template-rows: 105px auto;
+  grid-template-areas: 
+  "header"
+  "content";
 
-  body, input, button, textarea {
-    font-style: Robot Slab, serif;
-    font-size: 16px;
-    outline: none;
-  }
+  width: 100%;
+  height: 100vh;
 `
