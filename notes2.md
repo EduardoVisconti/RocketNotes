@@ -263,3 +263,235 @@ _-_ Como passamos o children na outra, ele captura tudo que tem dentro da Sectio
 - Margem top 24px
 * Agora vamos usar ela dentro da nossa página > Importar seção e usar dentro do Container com o título Minhas notas
 - Importar o Note e passar objeto data 17:16
+- No data vamos passar { title: ‘React’, vetor> tags: [{id: ‘1’, name: ‘react’}, +1 desse
+
+* Home > Styles > Na parte do Content
+- padding 0 64
+- over flow y: auto - habilitar scroll so quando n caber na tela ou deixar ‘scroll’ pra deixar fixo
+
+# Aula 15 - Map: Estrutura de repetição, para cada item que existe dentro de uma lista ele vai percorrer / fazer alguma coisa
+* tags.map(tag => / tags é a lista / tag é a variável que guarda de forma temporária o item que está sendo percorrido pelo map
+* E para cada item que estamos percorrendo, estamos renderizando um componente chamado Tag e passando a key e o title
+* <Tag
+            key={tag.id}
+            title={tag.name}
+
+Porque Map e não forEach? Utilizam a mesma estrutura, e percorre itens da lista
+
+Map retornou a coleção, ele é utilizando quando queremos manipular/alterar coleção = Usamos o map pq queremos um retorno do componente Tag formatado (com as info) para exibir
+Cada componente precisa de uma key.
+
+# Aula 16 - SignIn 
+* dentro da pasta pages criar pasta SignIn com índex e style
+* styles > importar styled component e exportar container styled div
+- altura 100vh
+- display flex
+- alinha itens esticados 
+* índex > importar container e form
+- exportar função signin e retornar <Container
+* Na main.jsx > importar o signin, trocar com o Details para aparecer a page > Na utilização também!!
+
+# Aula 17 - Formulário SignIn
+* índex.jsx > dentro do Container criar o elemento form > h1 rocket notes
+- p > check canva
+- h2
+- importar o Input e utilizar ele embaixo do h2 >
+- placeholder e-mail 
+- tipo texto
+- Importar ícones de LogIn, Mail, Lock
+- icon={FiMail}
+- ^^ Repetir para a senha, fazer as alterações necessárias
+- Importar button
+- Utilizar abaixo de tudo com title Entrar
+- Criar um link com o texto Criar conta 
+* styles > exportar Form styled form
+- padding 0 136
+- display flex , direção coluna, alinhar itens e justificar conteúdo ao centro
+- texto centralizado 
+- > h1 > fonte 48px, cor laranja
+- > h2 > fonte 24 > margem top 84 e baixo 24
+- > p > fonte 14, cor cinza 100
+- > a > margem top 124, cor laranja
+
+# Aula 18 - Utilizando imagens 
+* Criar pasta assets e colocar a imagem lá 
+* SignIn > Styles > Importar a imagem backgroundImg
+- exportar um novo componente Background styled div (para encher toda a parte da tela)
+- flex 1 para ocupar toda a parte
+- colocar a imagem setando o background: através do url(${backgroundImg no-repeat centro centro 
+- background size cover para ficar bem preenchida 
+* Índex > Importar o bg junto com o form e adicionar abaixo do form o <Bg
+
+# Aula 19 - Importação de Imagem 
+* import userImg from "../../assets/eduardo.png";
+- <img
+    src={userImg}
+    alt="Foto do usuário"
+  />
+* import backgroundImg from "../../assets/background.png";
+- export const Background = styled.div `
+    flex: 1;
+    background: url(${backgroundImg}) no-repeat center center;
+    background-size: cover;
+  `
+
+# Aula 20 - SignUp
+* Copiar e colar a pasta SignIn e mudar para Signup a pasta e ppl nome da função dentro do índex
+* main.jsx - Mudar a tela q está sendo exibida para SignUp - 3 lugares 
+* SignUp > Index > pegar o bg do final e colocar no começo 
+- trocar o h2 da forma correta (Cria sua conta
+- adicionar/importar outro icon (FiUser) > adicionar outro input em primeiro para o Nome com ícone
+- button title: Cadastra e o link do a : Voltar para o login
+* Style > trocar as margens do h2 48 0, **** No do signIn também 
+
+# Aula 21 - Profile
+* main > trocar a página para Profile
+* Pages > criar pasta Profile > index e style 
+* styles > importar styled e exportar container styled div
+- largura 100%
+* índex > importar Container e exportar função Profile que retorna Container
+- Importar FiArrowLeft
+- Dentro do Container > criar um Header com um link (a) e dentro renderizar o Ícone ^
+* styles > >header
+- largura 100%
+- altura 144
+- bg bg900
+- display flex e alinhar itens no centro
+- padding 0 124
+- svg { cor cinza 100 e fonte 24px
+* índex > importar input, button e os ícones FiUser, mail, lock
+- abaixo do header adicionar um formulário com 4 inputs, placeholder: nome email e senha atual/nova senha, type e icon adicionar corretamente (pensa q tá easy)
+- Abaixo dos inputs adicionar o button com título Salvar 
+* styles > exportar Form styled form
+- max largura 340
+- margem 30 auto 0 (¿subir um pouco form?)
+
+# Aula 22 - Avatar do usuário 
+* Profile > índex > adicionar a tag avatar em primeiro no form e dentro um img, pegar img do git user.png > importar o avatar junto com cont, form..
+- criar um label abaixo utilizando htmlFor=avatar para vincular com o input 
+- Importar o ícone FiCamera e colocar dentro do label 
+- abaixo do ícone colocar um input id avatar e do type file 
+* Styles > exportar avatar styled div
+- posição relativa 
+- margem -124 auto 32
+- largura e altura 186
+- também definir a mesma altura e largura para a >img e borda arredondada 50%
+- > label > largura e altura 48
+- bg laranja e arredondar 50%
+- display flex, alinhar itens dentro, justificar conteúdo centro 
+- posição absoluta, abaixo 7 e direta 7
+- cursor pointer
+- input { sem display
+- svg { largura e altura 20px e cor bg800
+* Na exportação da form acima, vamos colocar o espaçamento entre os inputs; “Pega pra mim a div, mas não qualquer div, quero a quarta div” > div:nth-child(4) > margem acima de 24
+
+# Aula 23 - Interface New
+* Criar pasta New, com os dois arq
+- styles > importar styled e exporter container styled div
+- largura 100-%
+- altura 100vh
+- display grid, template de linha, cabeceiro 105 e auto
+- template áreas: cabecario conteúdo
+* índex > importar header e container 
+- exportar função New > return e container > tag header /> dentro 
+* mainjs trocar a main page para ver como tá ficando 
+
+# Aula 24 - Header New
+* index > importar input e exportar junto com o Container
+- abaixo da tag header criar um main com form e header
+- dentro do header > h1 Criar nota & link com texto voltar
+- abaixo do header > tag input com placeholder Título 
+* styles > exportar variável Form styled form
+- max largura 550
+- margem 38 auto
+- *(e pro header dentro dele) > header > display flex e alinhar itens dentro e justificar conteúdo cada um de um lado 
+- margem de baixo 36
+- (ainda do header) a { > fonte 20 e cor cinza100
+
+# Aula 25 - text área 
+* Componente para escrever mais linhas
+* criar pasta TextArea e criar os dois arq
+* Índex > importar container > exporter fun textarea e passar a propriedade valor e restante 😇
+- passar pro Container o restante e dentro o {value}
+* styles > importar styled, exportar container styled textarea
+- ocupar 100% da onde ele estiver
+- altura 150
+- bg bg900
+- cor white
+- remover borda
+- propriedade de resize none (o que permite a pessoa aumentar segurando e arrastando)
+- margem baixo 8
+- arredondamento borda 10
+- padding 16
+- &::placeholder { cor cinza300
+* New > Index > importar o TextArea e usar embaixo do input passando a propriedade placeholder escrito observações 
+
+# Aula 26 - Componente NoteItem
+* Criar a pasta NoteItem com os dois arq
+* Índex > Importar ícones FiPlus e FiX
+- importar container
+- exportar func NoteItem > passar as propriedades isNew (pra saber se é pra adc um novo item), value, onClick, …rest
+- return > container isNew={isNew} (passando a propriedade da função pro container que vamos usar dentro do styled component)
+- dentro do container > input do tipo texto, value={value}, readyOnly={!isNew} e passar restante 
+- abaixo do input criar um button do tipo botão e onClick = onclick} e adc uma className = {isNew ? ‘button-add’ : ‘button-delete’
+- dentro do botão > { se é novo ? renderizar o <FiPlus caso contrário : <FiX }
+- Obs: meio que entendi o pq de passar as prioridades pra função e depois passar mas acho q temos q fazer umas pesquisar pra ser mais certeiro 
+
+# Aula 27 - Estilizando o NoteItem
+* styles > importar styled > exportar container styled div
+- display flex, alinhas itens dentro
+- bg condicional: bg {theme,  e passar a propriedade isNew }=> isNew ? “transparent” : ..bg900
+- cor cinza300
+- borda condicional: theme, isNew } => isNew ? ‘1px dashed {theme…cinza300}’ : “none”
+- margem abaixo 8px
+- arredondamento borda 10px
+- padding direita 16
+- * no botão q ta dentro > button: sem borda e sem bg
+- * > input { 
+- altura 56
+- altura 100%
+- padding 12
+- cor branco
+- bg transparent 
+- remover borda
+- &::place > cor cinza 300
+* New > index > importar NoteItem e Section
+- logo após o textarea criar um section c título Link úteis e passar dois NoteItem/> dentro, um com valor “site da rocket” e outro com isNew e placeholder “Novo link”
+* NoteItem > styles > em baixo de >button criar o .button-delete com a cor vermelha e -add com a cor laranja 
+
+# Aula 28 - Finalizando New
+* New > index >  abaixo da seção de Links, criar outra seção com título Marcadores
+- criar uma div com a classe Tags
+- criar dois NoteItem dentro da div iguais da seção acima, primeiro com o valor “react” e o debaixo trocar o placeholder para Nova tag dentro 
+* styles > dentro do Container abaixo de tudo por .tags { display flex, justificar conteúdo com espaço entre eles e o flex wrap wrap (se n couber na linha ele joga pra debaixo)
+* Fixar cabeçalho >  acima do .tags colocar um > main { com grid area content e overflowy auto (para ativar só quando n caber)
+* index > importar button > abaixo da última seção colocar a tag button com título Salvar 
+
+# Aula 29 - Rotas (React Route DOM)
+* instalar > npm install react-route-dom
+* Dentro da pasta src criar a pasta routes > vamos ter dois tipos de rota > app.routes.jsx (rota da aplicação, usuário só pode acessar quando estiver ligado na aplicação) e as outras rotas de autenticação (login, cadastro. só pode acessar quando n estiver logado) 
+- importar Routes, Route de ‘react-router-dom’ > Importar o componentes (páginas): New, Home, Details, Profile
+- exportar função AppRoutes (){ > return( e dentro > componente <Routes> onde vai envolver todas as nossas rotas (<Route>)
+- dentro de Routes > <Route path=“/” (endereço) (quero renderizar>) element={<Home />} />
+- copiar mais 3 desse routes ^ e modificar para cada página > para cada endereço temos que usar o /page apenas o home que não pois já é padrão > para /details/:id temos que passar um id (e depois recuperamos o parâmetro passado pela rota)
+* dentro da pasta routes criar o arq index.jsx > importar BrowserRouter de react router dom
+- importar AppRoutes de app.routes
+- exportar func Routes() > dentro do return > <BrowserRouter> <AppRoutes /> <BR/>
+* no main js agora invés de passsarmos o nome da página específica vamos trocar por Routes e /routes e dentro globalstyle também (((((verificar funcionamento)))))
+* copiar e colar o arq app.routes.jsx mas trocar para auth.routes e fazer essas alterações >
+- manter apenas duas rotas > SignIn and SignUp > apenas o SignUp tem endereço /register
+* routes > index > importar auth routes e trocar dentro do <Browser (((com essa mudança do vamos ter acesso às duas rotas de signin and signup
+
+# Aula 30 - Navegação
+* Pasta SignIn > índex > Importar componente Link de r r d
+- no lugar da nossa tag a do criar nota vamos trocar para: <Link to=“/register”>
+* SignUp > Fazer a mesma coisa que o SignIn só trocar o to=“/” (voltar para a raiz)
+* routes > index > trocar a rotas para a da aplicação > AppRoutes dentro da tag browserrouter
+* Home > Styles > Importar o Link de rrd 
+- Na exportação do NewNote invés de styled.button agora vai ser styled{Link}
+* Home > Index > na tag NewNote passar o to=“/new” e adicionar cor bg900
+* New > Index > Importar o Link > No nosso header no <a> de voltar colocar Link to=“/“
+* Header > Index > na tag Profile adicionar o to=“/profile”
+* Header > Styled > Importar link > No profile invés de ser .div trocar por { Link }
+* Profile > Index > Importar Link > No “a” do header trocar para Link to=/
+* FAZER UM OVERVIEW DE TODOS OS BOTÕES — NO ROUTES > Index > TROCAR PARA O AUTHROUTES E FAZER OVERVIEW
