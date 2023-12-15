@@ -166,7 +166,7 @@ _-_ Como passamos o children na outra, ele captura tudo que tem dentro da Sectio
 * > h1 > fonte 36, peso 500, padding top 64
 * > p fonte 16, margem acima 16, alinhamento texto justificado
   > _-_ Verificar scroll. Main ta pegando toda a largura. Conteúdo para deficiente uma largura máxima permitida para ficar no centro.
-- Section > Styles > No container troar o margem para 28 0
+- Section > Styles > No container trocar o margem para 28 0
 
 # Aula 09 - Página Home
 - Criar pasta Home > Index e Styles
