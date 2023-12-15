@@ -14,6 +14,9 @@ export function Details(){
       <main>
         <Content>
           <ButtonText title='Excluir Nota'/>
+
+          <h1></h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quidem expedita ab labore consectetur iusto consequatur quis accusantium odio quaerat, nobis harum dolorem minus, at animi earum, mollitia explicabo hic.</p>
         
           <Section title='Links úteis'>
             <Links>
